@@ -1,0 +1,7 @@
+[TITRE] TEP-IRM cérébrale à la 18F-FDOPA
+1. Indication : [motif clinique]
+2. Technique : [activité, lot, appareil, séquences]
+3. Résultats :
+   - IRM : [ischémie, hémorragie, atrophie, processus expansif, lignes médianes...]
+   - TEP : [répartition physiologique / hypofixation putaminale G/D/bilatérale]
+4. Conclusion : [Pas d’argument / Aspect en faveur d’une dénervation dopaminergique ...]

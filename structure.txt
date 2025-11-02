@@ -1,0 +1,27 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 4AB4-5722
+D:.
+│  .gitignore
+│  app.py
+│  build_index.py
+│  model.txt
+│  rag_query.py
+│  requirements.txt
+│  structure.txt
+│  
+├─data
+│  ├─corpus
+│  │  │  termes_radiologiques.txt
+│  │  │  
+│  │  ├─TEP IRM DOPA PARKINSON
+│  │  ├─TEP IRM FDG NEURODEGENERATIF
+│  │  ├─TEP TDM CHOLINE  PARATHYROIDE
+│  │  ├─TEP TDM FDG
+│  │  └─TEP TDM PSMA
+│  └─index
+├─speech_to_text
+│      transcrit_apres_parole_V2.py
+│      
+└─tools
+        generate_tree.py
+        

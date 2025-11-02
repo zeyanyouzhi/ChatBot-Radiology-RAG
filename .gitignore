@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Index / models / large artifacts
+data/index/
+*.faiss
+*.bin
+*.pt
+*.onnx
+*.model
+*.ckpt
+*.jsonl
+
+# Audio / PDFs (keep them private)
+audio_samples/
+*.wav
+*.mp3
+*.flac
+*.pdf
+
+# Logs / temp
+*.log
+logs/
+tmp/

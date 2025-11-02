@@ -1,0 +1,13 @@
+# --- Whisper environment ---
+torch
+torchvision
+torchaudio
+faster-whisper
+sounddevice
+soundfile
+numpy
+
+# --- RAG environment ---
+faiss-cpu
+requests
+sentence-transformers
