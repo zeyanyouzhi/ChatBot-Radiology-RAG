@@ -17,16 +17,12 @@ It enables clinicians or students to:
 
 ## 🩺 Architecture
 
-```mermaid
-graph TD
-  A[Audio Input (Doctor Dictation)] --> B[Whisper Speech-to-Text]
-  B --> C[Text Query]
-  C --> D[FAISS Index Search]
-  D --> E[Relevant Radiology Reports]
-  E --> F[BioMistral-7B Response Generation]
-  F --> G[Draft Radiology Report]
-
-````
+**Workflow Summary:**
+1️⃣ Audio input →  
+2️⃣ Whisper transcribes speech to text →  
+3️⃣ FAISS searches for similar cases →  
+4️⃣ BioMistral-7B generates structured report →  
+5️⃣ User reviews and finalizes.
 
 ---
 
