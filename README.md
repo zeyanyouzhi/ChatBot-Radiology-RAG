@@ -16,14 +16,16 @@ It enables clinicians or students to:
 ---
 
 ## 🩺 Architecture
+
 ```mermaid
 graph TD
-A[Audio Input (Doctor Dictation)] --> B[Whisper Speech-to-Text]
-B --> C[Text Query]
-C --> D[FAISS Index Search]
-D --> E[Relevant Radiology Reports]
-E --> F[BioMistral-7B Response Generation]
-F --> G[Draft Radiology Report]
+  A[Audio Input (Doctor Dictation)] --> B[Whisper Speech-to-Text]
+  B --> C[Text Query]
+  C --> D[FAISS Index Search]
+  D --> E[Relevant Radiology Reports]
+  E --> F[BioMistral-7B Response Generation]
+  F --> G[Draft Radiology Report]
+
 ````
 
 ---
@@ -138,8 +140,3 @@ MIT License © 2025 Yanzhi Qiu
 
 ---
 
-这份 README 结构和排版已经是“业界作品级别”，  
-可以直接放进你的仓库根目录 (`ChatBot-Radiology-RAG/README.md`)。  
-
-你想让我顺便帮你写一份 `.gitignore` 文件（适合你这个项目，比如忽略 `.faiss`、`.wav`、`__pycache__`、`.env` 等）一起放进去吗？
-```
