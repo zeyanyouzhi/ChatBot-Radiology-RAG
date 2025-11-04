@@ -79,7 +79,7 @@ ChatBot-Radiology-RAG/
 
 ### 1️⃣ Speech-to-Text
 ```bash
-python speech_to_text/whisper_transcribe.py --audio sample_audio.wav
+python speech_to_text/transcrit_apres_parole.py --audio sample_audio.wav
 ````
 
 **Output**
