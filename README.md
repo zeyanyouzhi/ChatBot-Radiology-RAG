@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="cover_radiology_rag.png" alt="Radiology RAG Chatbot – AI for Health" width="80%">
+</p>
 
 
 
