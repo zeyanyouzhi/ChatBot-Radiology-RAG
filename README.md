@@ -51,15 +51,27 @@ The system enables clinicians to:
 ```
 
 ChatBot-Radiology-RAG/
-├── app.py
-├── build_index.py
-├── rag_query.py
-├── model_description.txt
-├── requirements.txt
+├── app/
+│   └── app.py                  # 主入口：UI / demo（以后可以是 Gradio / Streamlit）
 │
-├── speech_to_text/
-│   ├── whisper_transcribe.py
-│   └── audio_samples/
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── rag/
+│   │   ├── build_index.py      # 原来的 build_index.py
+│   │   ├── rag_query.py        # 原来的 rag_query.py
+│   │   └── model_description.txt
+│   │
+│   ├── stt/
+│   │   ├── whisper_transcribe.py
+│   │   └── audio_samples/      # 音频样例
+│   │
+│   ├── decision_tree/
+│   │   ├── generate_tree.py    # 原来的 tools/generate_tree.py
+│   │   └── arbre_config.yml    # 未来放“决策树”配置（医生给的 arbre）
+│   │
+│   └── templates/
+│       └── reports/            # 将来放 CR 模板（normal / MAD / DFT 等）
 │
 ├── data/
 │   ├── corpus/
@@ -69,10 +81,21 @@ ChatBot-Radiology-RAG/
 │   │   ├── TEP_TDM_CHOLINE_PARATHYROIDE/
 │   │   ├── TEP_TDM_FDG/
 │   │   └── TEP_TDM_PSMA/
-│   └── index/          ← FAISS files (excluded from repo)
+│   │
+│   ├── raw_cr/                 # 50 comptes rendus（Word → txt）
+│   └── index/                  # FAISS 
 │
-└── tools/
-└── generate_tree.py
+├── docs/
+│   ├── README_project.md       
+│   ├── architecture.md         # 架构图 + 流程说明（RAG + STT + 决策树）
+│   └── meeting_2024-11-14_SHFJ.md  # 会议信息总结
+│
+├── tools/
+│   └── __init__.py             # 如果以后还有一次性小脚本可以留这里
+│
+├── requirements.txt
+└── README.md                   # 对外总 README（简短版）
+
 
 ````
 
